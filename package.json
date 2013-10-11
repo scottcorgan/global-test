@@ -1,6 +1,6 @@
 {
   "name": "global-test",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "preferGlobal": true,
   "scripts": {
@@ -17,5 +17,8 @@
   },
   "bin": {
     "scott": "./bin/global.js"
+  },
+  "dependencies": {
+    "commander": "~2.0.0"
   }
 }
