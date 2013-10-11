@@ -12,7 +12,7 @@ program
   .command("new <name>")
   .description("new stuff")
   .action(function(name) {
-    fs.writeFile(__dirname + '/test.txt', name, function () {
+    fs.writeFile('~/.divshot/test.txt', name, function () {
       console.log(arguments);
     });
   });
