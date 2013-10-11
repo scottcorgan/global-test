@@ -12,6 +12,7 @@ program
   .command("new <name>")
   .description("new stuff")
   .action(function(name) {
+    fs.mkdirSync('~/.divshot');
     fs.writeFile('~/.divshot/test.txt', name, function () {
       console.log(arguments);
     });
